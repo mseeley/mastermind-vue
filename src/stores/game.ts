@@ -109,8 +109,8 @@ export class Store implements GameStore {
             }
           }
 
-          // Then eliminate correct position and color matches and count the
-          // accumulate remaining indices.
+          // Then eliminate correct position and color matches and accumulate
+          // remaining indices.
           return round.code.reduce((acc, color, index) => {
             const guess = round.code[index];
             const foundIndices = occurences.get(guess);

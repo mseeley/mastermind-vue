@@ -1,5 +1,4 @@
 <script setup lang="ts">
-// import { ref, watchEffect } from "vue";
 import Surface from "../components/Surface.vue";
 import Link from "../components/Link.vue";
 import ChipSequence from "../components/ChipSequence.vue";
@@ -12,18 +11,6 @@ const isFinished = gameStore.props.state === GameState.Finished;
 const isSuccess =
   gameStore.props.round?.correctPositionCount ===
   gameStore.props.maxColorsPerRound;
-
-// console.log(isFinished, isSuccess);
-
-// // const isFinished = ref<boolean>(false);
-// // const isSuccess = ref<boolean>(false);
-
-// // watchEffect(() => {
-// //   isFinished.value = gameStore.props.state === GameState.Finished;
-// //   isSuccess.value =
-// //     gameStore.props.round?.correctPositionCount ===
-// //     gameStore.props.maxColorsPerRound;
-// // });
 </script>
 
 <template>
