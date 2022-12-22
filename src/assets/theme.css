@@ -1,0 +1,52 @@
+/* Reference tokens */
+:root {
+  --ref-color-white: hsl(0, 0%, 100%);
+  --ref-color-white-soft: #f8f8f8;
+
+  --ref-color-black: #181818;
+  --ref-color-black-soft: #222222;
+
+  --ref-color-blue: #2196f3;
+  --ref-color-brown: #795548;
+  --ref-color-pink: #d415e2;
+  --ref-color-green: #8CE071;
+  --ref-color-yellow: #ff9800;
+  --ref-color-red: #FF5A5F;
+
+  --ref-color-gray: #ccc;
+}
+
+/* Semantic tokens */
+:root {
+  --theme-color-primary: var(--ref-color-black-soft);
+  --theme-color-button-primary: var(--ref-color-black-soft);
+  --theme-color-button-secondary: var(--theme-color-button-primary);
+
+  --theme-color-chip-a: var(--ref-color-blue);
+  --theme-color-chip-b: var(--ref-color-brown);
+  --theme-color-chip-c: var(--ref-color-pink);
+  --theme-color-chip-d: var(--ref-color-green);
+  --theme-color-chip-e: var(--ref-color-yellow);
+  --theme-color-chip-f: var(--ref-color-red);
+  --theme-color-chip-placeholder: var(--ref-color-gray);
+
+  --theme-background-body: var(--ref-color-white-soft);
+  --theme-background-surface: var(--ref-color-white);
+
+  --theme-background-primary: var(--ref-color-yellow);
+  --theme-background-secondary: var(--ref-color-gray);
+  --theme-background-alternate-row: var(--ref-color-white-soft);
+
+  --theme-font-size-surface-title: 2rem;
+  --theme-font-weight-surface-title: bold;
+}
+
+body {
+  background-color: var(--theme-background-body);
+  display: flex;
+  place-content: center;
+  place-items: center;
+  min-height: 100vh;
+  font-family: 'Helvetica Neue', sans-serif;
+  font-size: 16px;
+}
